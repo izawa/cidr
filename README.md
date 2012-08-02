@@ -6,7 +6,7 @@ CIDR aggregator for IPv4 addresses
 
 Add this line to your application's Gemfile:
 
-    gem 'cidr', :git =>> "https://github.com/izawa/cidr.git"
+    gem 'cidr', :git => "https://github.com/izawa/cidr.git"
 
 And then execute:
 
