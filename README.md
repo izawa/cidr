@@ -18,22 +18,22 @@ Or install it yourself as:
 
 ## Usage
 
-require 'cidr'
+    require 'cidr'
 
-aggregator = Cidr::Aggregator.new
+    aggregator = Cidr::Aggregator.new
 
-aggregator.add('192.168.0.1')
-aggregator.add('192.168.0.2')
-aggregator.add('192.168.0.3')
-aggregator.add('192.168.0.4')
-aggregator.add('192.168.0.5')
-aggregator.add('192.168.0.6')
-aggregator.add('192.168.0.7')
+    aggregator.add('192.168.0.1')
+    aggregator.add('192.168.0.2')
+    aggregator.add('192.168.0.3')
+    aggregator.add('192.168.0.4')
+    aggregator.add('192.168.0.5')
+    aggregator.add('192.168.0.6')
+    aggregator.add('192.168.0.7')
 
-aggregator.list
-  #=> [{:addr=>"192.168.0.1", :prefix=>32},
-       {:addr=>"192.168.0.2", :prefix=>31},
-       {:addr=>"192.168.0.4", :prefix=>30}]
+    aggregator.list
+      #=> [{:addr=>"192.168.0.1", :prefix=>32},
+           {:addr=>"192.168.0.2", :prefix=>31},
+           {:addr=>"192.168.0.4", :prefix=>30}]
 
 aggregator.add will be able to recognize the input string in the following format.
 
